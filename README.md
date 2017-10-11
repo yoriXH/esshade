@@ -91,6 +91,7 @@ Hbase与Elasticsearch的jar包冲突解决办法
         </repository>
     </repositories>
 </project>
+
 pom.xml文件配置好后，构建，得到jar包。如下图，依赖关系加入.m2文件夹里。
 
 如上配置完成后，其实就是将com.google.guava等4个可能有冲突的jar包通过maven-shade-plugin插件迁移后，重新打个jar包从而使得在引入这个jar包时能够使用该jar包自己的依赖而不是使用外部依赖。
