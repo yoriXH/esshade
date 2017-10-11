@@ -1,0 +1,2 @@
+# esshade
+Hbase与Elasticsearch的jar包冲突解决办法
